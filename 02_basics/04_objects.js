@@ -7,7 +7,7 @@ tinderUser.isLoggedIn = false
 
 // console.log(tinderUser);
 
-const regularUser = {
+const regularUser = { // nested object
     email: "some@gmail.com",
     fullname: {
         userfullname: {
@@ -24,13 +24,13 @@ const obj2 = {3: "a", 4: "b"}
 const obj4 = {5: "a", 6: "b"}
 
 // const obj3 = { obj1, obj2 }
-// const obj3 = Object.assign({}, obj1, obj2, obj4)
+// const obj3 = Object.assign({}, obj1, obj2, obj4) // it will merge the objects the first argument is the target object and rest are the source objects
 
-const obj3 = {...obj1, ...obj2}
+const obj3 = {...obj1, ...obj2} // spread operator to merge objects
 // console.log(obj3);
 
 
-const users = [
+const users = [ // array of user objects
     {
         id: 1,
         email: "h@gmail.com"
@@ -48,11 +48,11 @@ const users = [
 users[1].email
 // console.log(tinderUser);
 
-// console.log(Object.keys(tinderUser));
-// console.log(Object.values(tinderUser));
-// console.log(Object.entries(tinderUser));
+// console.log(Object.keys(tinderUser)); // returns an array of keys of the object
+// console.log(Object.values(tinderUser)); // returns an array of values of the object
+// console.log(Object.entries(tinderUser)); // returns an array of key-value pairs of the object
 
-// console.log(tinderUser.hasOwnProperty('isLoggedIn'));
+// console.log(tinderUser.hasOwnProperty('isLoggedIn')); // returns true if the object has the property else false
 
 
 const course = {
@@ -63,7 +63,7 @@ const course = {
 
 // course.courseInstructor
 
-const {courseInstructor: instructor} = course
+const {courseInstructor: instructor} = course // object destructuring and renaming the variable
 
 // console.log(courseInstructor);
 console.log(instructor);
@@ -79,4 +79,3 @@ console.log(instructor);
     {},
     {}
 ]
-

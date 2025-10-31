@@ -1,29 +1,33 @@
-"use strict"; // treat all JS code as newer version
+"use strict" //treat all Js code as newer version (class,modules,Aero etc..)
 
-// alert( 3 + 3) // we are using nodejs, not browser
+// alert(3+3) we are using Nodejs not Browser
 
-console.log(3 
-    +
-     3) // code readability should be high
+// https://tc39.es/ is the offical documentation for js
 
-console.log("Hitesh")
+let name = "Harsh"
+let age = 19
+let isLoggedIn =true
+let state; // valur->undefined
+let x=null;// null value means empty or error 
 
-
-let name = "hitesh"
-let age = 18
-let isLoggedIn = false
-let state;
-
-// number => 2 to power 53
-// bigint
-// string => ""
-// boolean => true/false
-// null => standalone value
-// undefined => 
-// symbol => unique
+// number =>  range -> 2^53
+//bigInt
+// string
+// boolean
+// null -> standalone value
+// undefined -> 
+//symbol ->unique
 
 
-// object
+//object ->VVIMP
 
-console.log(typeof undefined); // undefined
-console.log(typeof null); // object
+console.log(typeof "harsh");// string
+console.log(typeof age);//number
+console.log(typeof undefined);//undefined
+console.log(typeof null);//object
+
+
+
+
+
+

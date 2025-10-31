@@ -1,0 +1,40 @@
+let score = "33"
+let marks ="100abc"
+
+console.log(typeof(score));// string
+console.log(typeof(marks));// string
+
+let valueInScore = Number(score);
+let ValueInMarks = Number(marks)
+
+console.log(typeof(ValueInMarks));// number
+console.log(typeof(valueInScore));// number
+
+console.log(ValueInMarks);// 33
+console.log(valueInScore);// NaN
+
+marks=null;
+ValueInMarks = Number(marks)//number
+console.log(ValueInMarks);// 0 -> Null when Converted into number its value changes to 0
+// Similary for undefined the converted value is NaN
+//true->1
+//flase->0
+
+
+
+//Now we are Converting into Boolean
+// x!=0->true
+//x=0 ->false
+// "" ->false
+//"Harsh"->true
+
+///////////////////////////////////operations/////////////////////////////////////////
+
+let x = 3;
+const y = x++;
+// x is 4; y is 3
+
+let x2 = 3n;
+const y2 = x2++;
+// x2 is 4n; y2 is 3n
+console.log(x2)
